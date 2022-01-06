@@ -1,0 +1,8 @@
+FROM grafana/grafana:7.5.5-ubuntu
+
+RUN grafana-cli plugins list-remote ; \
+grafana-cli plugins install alexanderzobnin-zabbix-app ; \
+grafana-cli plugins install camptocamp-prometheus-alertmanager-datasource
+
+EXPOSE 3000/tcp
+CMD ["/usr/sbin/init"]

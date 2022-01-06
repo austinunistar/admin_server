@@ -1,0 +1,13 @@
+$TTL 86400	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.bankuat1.com (
+				6         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@			IN		NS	ns1.yxunistar.com.
+BANK-DB-N1	IN		A	192.168.90.53
+BANK-DB-N1-VIP	IN		A	192.168.90.55
+BANK-DB		IN		A	192.168.90.203
+bankadmin	IN	A	192.168.73.186

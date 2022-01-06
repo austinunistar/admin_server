@@ -1,0 +1,10 @@
+$TTL 86400	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.dcdr.com (
+				7          ; serial
+				3600       ; refresh (1 hour)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 weeks)
+				86400      ; minimum (1 day)
+				)
+@	IN		NS	ns1.yxunistar.com.
+dc-db	IN			A	172.31.22.1

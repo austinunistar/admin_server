@@ -1,0 +1,10 @@
+$TTL 86400	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.paymentprod.com (
+				2         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@		IN		NS	ns1.yxunistar.com.
+bank1admin	IN		A	27.126.222.32

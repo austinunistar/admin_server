@@ -1,0 +1,12 @@
+$TTL	86400
+@		IN SOA		ns1.yxunistar.com.       root.yxunistar.com (
+					4		; serial (d. adams)
+					1H		; refresh
+					15M		; retry
+					2W		; expire
+					1D )		; minimum
+@     		   IN      NS      ns1.yxunistar.com.
+@		   IN	   NS	   ns2.yxunistar.com.
+ns1		   IN      A       192.168.8.248
+ns2		   IN	   A	   192.168.8.246
+mobile             IN      A       172.30.113.61

@@ -1,0 +1,13 @@
+$TTL 300	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.banksit1.com (
+				4         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@			IN		NS	ns1.yxunistar.com.
+;BANK-DB		IN		A	192.168.90.120
+;BANK-DB		IN		A	192.168.90.121
+BANK-DB-N1      IN              A       192.168.90.123
+BANK-DB-N1-VIP  IN              A       192.168.90.125

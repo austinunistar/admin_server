@@ -1,0 +1,20 @@
+$TTL    86400
+@               IN SOA          ns1.yxunistar.com.       root.cpgstg.com (
+                                        7              ; serial (d. adams)
+                                        3H              ; refresh
+                                        15M             ; retry
+                                        1W              ; expiry
+                                        1D )            ; minimum
+@                  IN      NS      ns1.yxunistar.com.
+@                  IN      NS      ns2.yxunistar.com.
+admin                   A       222.127.5.45
+mobile                A       222.127.5.45
+mobile1                A       222.127.5.45
+m		                A       192.168.5.21
+www                     A       222.127.5.45
+air                     A       192.168.5.21
+vip                     A       222.127.5.45
+new                     A       192.168.5.21
+fe1                     A       192.168.5.21
+yearend                 A       192.168.5.33
+bankadmin		A	192.168.123.22

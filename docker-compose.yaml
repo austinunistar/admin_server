@@ -1,0 +1,130 @@
+version: '3.5'
+services:
+  openldap:
+    build:
+      context: .
+      dockerfile: Dockerfile.openldap
+    image: office/openldap:0.2
+    ports:
+      - 389:389/tcp
+    networks:
+      - manager
+    privileged: true
+    container_name: openldap
+    hostname: openldap
+    environment:
+      - LDAP_BASE_DN=dc=yxunistar,dc=com
+      - LDAP_ADMIN_ACCOUNT=root
+      - LDAP_ADMIN_PASSWORD=057g0kre
+      - LDAP_DOMAIN_DC=yxunistar
+    restart: always
+    volumes:
+        - ./config/Openldap/etc/openldap/slapd.d:/etc/openldap/slapd.d:rw
+        - ./config/Openldap/var/lib/ldap:/var/lib/ldap:rw
+
+  phpldapadmin:
+    image: osixia/phpldapadmin:latest
+    privileged: true
+    ports:
+      - 8080:80/tcp
+    networks:
+      - manager
+    environment:
+      PHPLDAPADMIN_HTTPS: "false"
+      PHPLDAPADMIN_LDAP_HOSTS: "openldap"
+    restart: always
+    container_name: phpldapadmin
+    hostname: phpldapadmin
+    depends_on:
+      - openldap
+        
+  ntp:
+    image: cturra/ntp
+    ports:
+      - 123:123/udp
+    networks:
+      - manager
+    restart: always
+    container_name: ntp
+    hostname: ntp
+        
+  admin:
+    image: nginx:1.21.0
+    ports:
+      - 80:80/tcp
+    networks:
+      - manager
+    environment:
+      NGINX_HOST: admin.yxunistar.com
+      NGINX_PORT: 80
+    volumes:
+      - ./config/Admin/default.conf:/etc/nginx/conf.d/default.conf
+      - ./www:/var/www
+    restart: always
+    container_name: admin
+    hostname: admin
+
+  dns:
+    image: store/internetsystemsconsortium/bind9:9.11
+    ports:
+      - 53:53/udp
+      - 53:53/tcp
+      - 953:953/tcp
+    networks:
+      - manager
+    volumes:
+      - ./config/Dns/etc/bind:/etc/bind
+      - ./config/Dns/var/named:/var/named
+    restart: always
+    container_name: dns
+    hostname: dns
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8081:80/tcp
+    networks:
+      - manager
+    restart: always
+    container_name: phpmyadmin
+    hostname: phpmyadmin
+    volumes:
+        - ./config/Phpmyadmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
+
+  grafana755:
+    build:
+      context: .
+      dockerfile: Dockerfile.grafana755
+    image: it/grafana755
+    ports:
+      - 3000:3000/tcp
+    networks:
+      - manager
+    restart: always
+    container_name: grafana755
+    hostname: grafana755
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    ports:
+      - 9101:8080/tcp
+    networks:
+      - manager
+    restart: always
+    container_name: cadvisor
+    hostname: cadvisor
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+ 
+networks:
+  manager:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "false"
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.250.0/24"

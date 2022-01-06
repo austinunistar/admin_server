@@ -1,0 +1,51 @@
+$TTL 300	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.bankdev2.com (
+				7         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@		IN		NS	ns1.yxunistar.com.
+acs1		IN		A	192.168.79.13
+as1		IN		A	192.168.79.31
+bcs1		IN		A	192.168.79.19
+bis1		IN		A	192.168.79.51
+bps1		IN		A	192.168.79.29
+bws1		IN		A	192.168.79.15
+cch1		IN		A	192.168.79.24
+cgs1		IN		A	192.168.79.25
+cms1		IN		A	192.168.79.22
+cps1		IN		A	192.168.79.18
+css1		IN		A	192.168.79.11
+cws1		IN		A	192.168.79.14
+db1		IN		A	192.168.90.109
+dcs1		IN		A	192.168.79.33
+etl1		IN		A	192.168.79.52
+jms1		IN		A	192.168.79.27
+jps1		IN		A	192.168.79.21
+lgs1		IN		A	192.168.79.17
+lgs2		IN		A	192.168.79.117
+lgs3		IN		A	192.168.79.28
+lgs4		IN		A	192.168.79.128
+lms1		IN		A	192.168.79.20
+msg1		IN		A	192.168.79.16
+scg1		IN		A	192.168.79.26
+uss1		IN		A	192.168.79.12
+uuweb1		IN		A	192.168.79.30
+vip1		IN		A	192.168.79.23
+;bank-db     	IN              A       192.168.90.70
+;bank-db     	IN              A       192.168.90.71
+bank-db-n1   	IN              A       192.168.90.73
+bank-db-n1-vip  IN              A       192.168.90.75
+bankpay         IN      A       192.168.79.185
+verify1         IN      A       192.168.79.182
+bankadmin1      IN      A       192.168.79.182
+verify2         IN      A       192.168.79.186
+bankadmin2      IN      A       192.168.79.186
+bank1           IN      A       192.168.79.181
+bankmobile1     IN      A       192.168.79.181
+bankair         IN      A       192.168.79.181
+new             IN      A       192.168.79.181
+bankvip1        IN      A       192.168.79.181
+yearend         IN      A       192.168.79.189

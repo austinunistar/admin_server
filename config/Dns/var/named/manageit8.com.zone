@@ -1,0 +1,14 @@
+$ORIGIN .
+$TTL 60	; 1 mins
+manageit8.com	IN SOA	localhost. root.localhost. (
+				1    ; serial
+				604800     ; refresh (1 week)
+				86400      ; retry (1 day)
+				2419200    ; expire (4 weeks)
+				86400     ; minimum (1 day)
+				)
+			NS	localhost.
+$ORIGIN manageit8.com.
+ci-jenkins         IN      A       192.168.8.3
+cmdb               IN      A       192.168.8.20
+

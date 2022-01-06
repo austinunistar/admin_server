@@ -1,0 +1,23 @@
+$TTL	86400
+@               IN      SOA     ns1.yxunistar.com.      root.prd (
+                                2008050124 ; serial
+                                28800      ; refresh (8 hours)
+                                7200       ; retry (2 hours)
+                                604800     ; expire (1 week)
+                                86400      ; minimum (1 day)
+                                )
+
+@     		IN      NS      ns1.yxunistar.com.
+@		IN	NS	ns2.yxunistar.com.
+TWAPP01		IN	A	27.126.222.50
+TWAPP02-1	IN	A 	27.126.222.48
+TWAPP02-2	IN      A       27.126.222.49
+TWAPP03-1	IN      A       27.126.222.55
+TWAPP03-2	IN      A       27.126.222.56
+TWAPP04-1	IN      A       27.126.222.58
+TWAPP04-2	IN      A       27.126.222.59
+TWPriDB		IN      A       27.126.222.52
+TWSecDB		IN      A       27.126.222.53
+TWAPP02		IN      A       27.126.222.51
+TWAPP03		IN      A       27.126.222.54
+TWAPP04		IN      A       27.126.222.57

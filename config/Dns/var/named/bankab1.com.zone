@@ -1,0 +1,40 @@
+$TTL 86400	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.bankab1.com (
+				3         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@		IN		NS	ns1.yxunistar.com.
+acs1		IN		A	192.168.76.13
+as1		IN		A	192.168.76.31
+bcs1		IN		A	192.168.76.19
+bis1		IN		A	192.168.76.51
+bps1		IN		A	192.168.76.29
+bws1		IN		A	192.168.76.15
+cch1		IN		A	192.168.76.24
+cgs1		IN		A	192.168.76.25
+cms1		IN		A	192.168.76.22
+cps1		IN		A	192.168.76.18
+css1		IN		A	192.168.76.11
+cws1		IN		A	192.168.76.14
+db1		IN		A	192.168.90.106
+dcs1		IN		A	192.168.76.33
+etl1		IN		A	192.168.76.52
+jms1		IN		A	192.168.76.27
+jps1		IN		A	192.168.76.21
+lgs1		IN		A	192.168.76.17
+lgs2		IN		A	192.168.76.117
+lgs3		IN		A	192.168.76.28
+lgs4		IN		A	192.168.76.128
+lms1		IN		A	192.168.76.20
+msg1		IN		A	192.168.76.16
+scg1		IN		A	192.168.76.26
+uss1		IN		A	192.168.76.12
+uuweb1		IN		A	192.168.76.30
+vip1		IN		A	192.168.76.23
+BANK-DB 		IN              A	192.168.90.100
+BANK-DB	                IN              A	192.168.90.101
+BANK-AB1-DB-N1		IN              A	192.168.90.103
+BANK-AB1-DB-N1-VIP	IN              A	192.168.90.105

@@ -1,0 +1,10 @@
+$TTL    86400
+@               IN SOA          ns1.yxunistar.com.       root.mpdev1.com (
+                                        47              ; serial (d. adams)
+                                        1H              ; refresh
+                                        15M             ; retry
+                                        2W              ; expire
+                                        1D )            ; minimum
+@                  IN      NS      ns1.yxunistar.com.
+tlcdev                      IN        A      192.168.91.11
+mtlc                      IN        A      192.168.91.11

@@ -1,0 +1,38 @@
+$TTL 86400	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.dcab1.com (
+				4         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@		IN		NS	ns1.yxunistar.com.
+acs1		IN		A	192.168.77.13
+as1		IN		A	192.168.77.31
+bcs1		IN		A	192.168.77.19
+bis1		IN		A	192.168.77.51
+bps1		IN		A	192.168.77.29
+bws1		IN		A	192.168.77.15
+cch1		IN		A	192.168.77.24
+cgs1		IN		A	192.168.77.25
+cms1		IN		A	192.168.77.22
+cps1		IN		A	192.168.77.18
+css1		IN		A	192.168.77.11
+cws1		IN		A	192.168.77.14
+db1		IN		A	192.168.90.107
+dcs1		IN		A	192.168.77.33
+etl1		IN		A	192.168.77.52
+jms1		IN		A	192.168.77.27
+jps1		IN		A	192.168.77.21
+lgs1		IN		A	192.168.77.17
+lgs2		IN		A	192.168.77.117
+lgs3		IN		A	192.168.77.28
+lgs4		IN		A	192.168.77.128
+lms1		IN		A	192.168.77.20
+msg1		IN		A	192.168.77.16
+scg1		IN		A	192.168.77.26
+uss1		IN		A	192.168.77.12
+uuweb1		IN		A	192.168.77.30
+vip1		IN		A	192.168.77.23
+DC-DB           IN              A	192.168.90.113
+

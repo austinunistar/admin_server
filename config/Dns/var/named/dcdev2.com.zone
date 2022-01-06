@@ -1,0 +1,37 @@
+$TTL 86400	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.dcdev2.com (
+				4         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@		IN		NS	ns1.yxunistar.com.
+acs1		IN		A	192.168.80.13
+as1		IN		A	192.168.80.31
+bcs1		IN		A	192.168.80.19
+bis1		IN		A	192.168.80.51
+bps1		IN		A	192.168.80.29
+bws1		IN		A	192.168.80.15
+cch1		IN		A	192.168.80.24
+cgs1		IN		A	192.168.80.25
+cms1		IN		A	192.168.80.22
+cps1		IN		A	192.168.80.18
+css1		IN		A	192.168.80.11
+cws1		IN		A	192.168.80.14
+db1		IN		A	192.168.90.110
+dcs1		IN		A	192.168.80.33
+etl1		IN		A	192.168.80.52
+jms1		IN		A	192.168.80.27
+jps1		IN		A	192.168.80.21
+lgs1		IN		A	192.168.80.17
+lgs2		IN		A	192.168.80.117
+lgs3		IN		A	192.168.80.28
+lgs4		IN		A	192.168.80.128
+lms1		IN		A	192.168.80.20
+msg1		IN		A	192.168.80.16
+scg1		IN		A	192.168.80.26
+uss1		IN		A	192.168.80.12
+uuweb1		IN		A	192.168.80.30
+vip1		IN		A	192.168.80.23
+dc-db           IN              A       192.168.90.83

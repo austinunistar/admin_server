@@ -1,0 +1,32 @@
+$TTL    86400
+@               IN SOA          ns1.yxunistar.com.       root.pf1train1.com (
+                                        12              ; serial (d. adams)
+                                        1H              ; refresh
+                                        15M             ; retry
+                                        2W              ; expire
+                                        1D )            ; minimum
+@                  IN      NS      ns1.yxunistar.com.
+m                  IN      A       172.19.101.71
+fe1                IN      A       172.19.101.71
+web                IN      A       172.19.101.71
+mobile             IN      A       172.19.101.71
+air                IN      A       172.19.101.71
+sitair1            IN      A       172.19.101.71
+fe2                IN      A       172.19.101.72
+aa                 IN      A       172.19.101.21
+aa1                IN      A       172.19.101.21
+aa2                IN      A       172.19.101.22
+be1                IN      A       172.19.101.31
+console            IN      A       172.19.101.31
+be2                IN      A       172.19.101.32
+activity           IN      A       172.19.255.30
+activity1          IN      A       172.19.101.91
+activity2          IN      A       172.19.101.92
+autocraw           IN      A       172.19.101.26
+autocraw1          IN      A       172.19.101.26
+autocraw2          IN      A       172.19.101.27
+laxino             IN      A       172.19.101.46
+laxino1            IN      A       172.19.101.46
+lms1               IN      A       172.19.101.48
+;vip                IN      A       172.19.101.61
+log		   IN      A       172.19.202.16

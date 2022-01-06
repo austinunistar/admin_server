@@ -1,0 +1,9 @@
+$TTL    86400
+@               IN SOA          ns1.yxunistar.com.       root.dcsit4.com (
+                                        1               ; serial (d. adams)
+                                        1H              ; refresh
+                                        15M             ; retry
+                                        2W              ; expiry
+                                        1D )            ; minimum
+@                  IN      NS      ns1.yxunistar.com.
+DC-DB		   IN	   A       192.168.100.131

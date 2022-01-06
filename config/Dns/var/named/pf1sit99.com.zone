@@ -1,0 +1,19 @@
+$TTL    86400
+@               IN SOA          ns1.yxunistar.com.       root.pf1sit3.com (
+                                        6              ; serial (d. adams)
+                                        1H              ; refresh
+                                        15M             ; retry
+                                        2W              ; expire
+                                        1D )            ; minimum
+@                  IN      NS      ns1.yxunistar.com.
+web                IN      A       192.168.50.12
+mobile             IN      A       192.168.50.12
+air                IN      A       192.168.50.12
+sitair1            IN      A       192.168.50.12
+vip                IN      A       192.168.50.17
+aa                 IN      A       192.168.50.11
+console            IN      A       192.168.50.13
+autocraw           IN      A       192.168.50.14
+laxino             IN      A       192.168.50.15
+3party             IN      A       192.168.50.16
+lms                IN      A       192.168.50.18

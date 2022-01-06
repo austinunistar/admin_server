@@ -1,0 +1,36 @@
+$TTL 86400	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.phbanksit2.com (
+				2         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@		IN		NS	ns1.yxunistar.com.
+acs1		IN		A	192.168.82.13
+as1		IN		A	192.168.82.31
+bcs1		IN		A	192.168.82.19
+bis1		IN		A	192.168.82.51
+bps1		IN		A	192.168.82.29
+bws1		IN		A	192.168.82.15
+cch1		IN		A	192.168.82.24
+cgs1		IN		A	192.168.82.25
+cms1		IN		A	192.168.82.22
+cps1		IN		A	192.168.82.18
+css1		IN		A	192.168.82.11
+cws1		IN		A	192.168.82.14
+db1		IN		A	192.168.90.112
+dcs1		IN		A	192.168.82.33
+etl1		IN		A	192.168.82.52
+jms1		IN		A	192.168.82.27
+jps1		IN		A	192.168.82.21
+lgs1		IN		A	192.168.82.17
+lgs2		IN		A	192.168.82.117
+lgs3		IN		A	192.168.82.28
+lgs4		IN		A	192.168.82.128
+lms1		IN		A	192.168.82.20
+msg1		IN		A	192.168.82.16
+scg1		IN		A	192.168.82.26
+uss1		IN		A	192.168.82.12
+uuweb1		IN		A	192.168.82.30
+vip1		IN		A	192.168.82.23

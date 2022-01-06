@@ -1,0 +1,12 @@
+$TTL    86400
+@               IN SOA          ns1.yxunistar.com.       root.banksit1-tw.com (
+                                        4              ; serial (d. adams)
+                                        1H              ; refresh
+                                        15M             ; retry
+                                        2W              ; expire
+                                        1D )            ; minimum
+@                  IN      NS      ns1.yxunistar.com.
+bks1		 IN	   A	  192.168.66.11
+bks2             IN        A      192.168.66.111
+brg1		 IN	   A	  192.168.66.12
+brg2             IN        A      192.168.66.112

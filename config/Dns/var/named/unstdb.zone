@@ -1,0 +1,14 @@
+$TTL	86400
+@               IN      SOA     ns1.yxunistar.com.      root.unstdb (
+                                2008050123 ; serial
+                                28800      ; refresh (8 hours)
+                                7200       ; retry (2 hours)
+                                604800     ; expire (1 week)
+                                86400      ; minimum (1 day)
+                                )
+
+
+@     IN      NS      ns1.yxunistar.com.
+sit		   IN	   A	   192.168.8.253
+dev		   IN	   A	   192.168.8.253
+

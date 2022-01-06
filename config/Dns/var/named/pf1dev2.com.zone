@@ -1,0 +1,27 @@
+$TTL    86400
+@               IN SOA          ns1.yxunistar.com.       root.pf1dev2.com (
+                                        17              ; serial (d. adams)
+                                        1H              ; refresh
+                                        15M             ; retry
+                                        2W              ; expire
+                                        1D )            ; minimum
+@                  IN      NS      ns1.yxunistar.com.
+web                IN      A       192.168.101.242
+fe                 IN      A       192.168.101.242
+mobile             IN      A       192.168.101.242
+air                IN      A       192.168.101.242
+sitair1            IN      A       192.168.101.242
+;vip                IN      A       192.168.101.218
+aa                 IN      A       192.168.101.211
+aa1                IN      A       192.168.101.211
+aa2                IN      A       192.168.101.212
+console            IN      A       192.168.101.241
+be                 IN      A       192.168.101.241
+autocraw           IN      A       192.168.101.244
+laxino             IN      A       192.168.101.217
+3party             IN      A       192.168.101.216
+dev2-jenkins       IN      A       192.168.101.250
+lms                IN      A       192.168.101.219
+activity           IN      A       192.168.101.200
+activity1          IN      A       192.168.101.220
+activity2          IN      A       192.168.101.221

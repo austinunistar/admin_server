@@ -1,0 +1,19 @@
+$TTL 3H
+@       IN SOA   ns1.yxunistar.com.       root.banknew.com (
+                                        8       ; serial
+                                        1H      ; refresh
+                                        15M     ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+@       	IN      NS      ns1.yxunistar.com.
+bankpay		IN	A	192.168.32.185
+verify1		IN	A	192.168.32.182
+bankadmin1	IN	A	192.168.32.182
+verify2         IN      A       192.168.32.186
+bankadmin2      IN      A       192.168.32.186
+bank1		IN	A	192.168.32.181	
+bankmobile1	IN	A	192.168.32.181
+bankair		IN	A	192.168.32.181
+new		IN      A       192.168.32.181
+bankvip1	IN	A	192.168.32.181
+yearend		IN	A	192.168.32.189

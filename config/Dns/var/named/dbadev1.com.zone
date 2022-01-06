@@ -1,0 +1,13 @@
+$TTL    86400
+@               IN SOA          ns1.yxunistar.com.       root.dbadeb1.com (
+                                        2               ; serial (d. adams)
+                                        1H              ; refresh
+                                        15M             ; retry
+                                        2W              ; expire
+                                        1D )            ; minimum
+@                  IN      NS      ns1.yxunistar.com.
+; DBA DB DNS
+DB-P                     IN        A      192.168.8.13
+DB-S                     IN        A      192.168.8.14
+DB                       IN        A      192.168.8.13
+ODSDB   		 IN        A      192.168.8.33

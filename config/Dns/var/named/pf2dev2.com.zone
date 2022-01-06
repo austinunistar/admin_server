@@ -1,0 +1,52 @@
+$TTL 86400	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.pf2dev2.com (
+				31         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@		IN		NS	ns1.yxunistar.com.
+acs1		IN		A	192.168.78.13
+as1		IN		A	192.168.78.31
+bcs1		IN		A	192.168.78.19
+ecos1		IN		A	192.168.78.19
+pms1            IN              A       192.168.78.19
+bpm1            IN              A       192.168.78.19
+bis1		IN		A	192.168.78.51
+bps1		IN		A	192.168.78.29
+was1		IN		A	192.168.78.29
+bws1		IN		A	192.168.78.15
+cch1		IN		A	192.168.78.24
+cgs1		IN		A	192.168.78.25
+casu1		IN		A	192.168.78.25
+cms1		IN		A	192.168.78.22
+cps1		IN		A	192.168.78.18
+core1           IN              A       192.168.78.11
+ods1		IN		A	192.168.78.15
+css1		IN		A	192.168.78.11
+cws1		IN		A	192.168.78.14
+mns1		IN		A	192.168.78.14
+uuweb1		IN		A	192.168.78.14
+ads1		IN		A	192.168.78.14
+db1		IN		A	192.168.90.108
+dcs1		IN		A	192.168.78.33
+etl1		IN		A	192.168.78.52
+jms1		IN		A	192.168.78.27
+jps1		IN		A	192.168.78.21
+lgs1		IN		A	192.168.78.17
+lgs2		IN		A	192.168.78.117
+lgs3		IN		A	192.168.78.28
+lgs4		IN		A	192.168.78.128
+lms1		IN		A	192.168.78.20
+msg1		IN		A	192.168.78.16
+scg1		IN		A	192.168.78.26
+uss1		IN		A	192.168.78.12
+pps1		IN		A	192.168.78.19
+sgs1		IN		A	192.168.78.25
+dev2-jenkins		IN		A	192.168.78.30
+dev2-jenkins2            IN              A       192.168.78.32
+vip1		IN		A	192.168.78.23
+PF2-DB          IN              A       192.168.90.63
+ods-db          IN              A       192.168.90.63
+monitoras	IN		A	192.168.90.221

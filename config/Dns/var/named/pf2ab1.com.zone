@@ -1,0 +1,50 @@
+$TTL 86400	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.pf2ab1.com (
+				14         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@		IN		NS	ns1.yxunistar.com.
+acs1		IN		A	192.168.75.13
+as1		IN		A	192.168.75.31
+bcs1		IN		A	192.168.75.19
+ecos1            IN              A       192.168.75.19
+bis1		IN		A	192.168.75.51
+bps1		IN		A	192.168.75.29
+was1		IN		A	192.168.75.29
+bws1		IN		A	192.168.75.15
+cch1		IN		A	192.168.75.24
+cgs1		IN		A	192.168.75.25
+casu1            IN              A       192.168.75.25
+sgs1            IN              A       192.168.75.25
+cms1		IN		A	192.168.75.22
+cps1		IN		A	192.168.75.18
+core1           IN              A       192.168.75.11
+ods1            IN              A       192.168.75.15
+css1		IN		A	192.168.75.11
+cws1		IN		A	192.168.75.14
+db1		IN		A	192.168.90.105
+dcs1		IN		A	192.168.75.33
+etl1		IN		A	192.168.75.52
+jms1		IN		A	192.168.75.27
+jps1		IN		A	192.168.75.21
+lgs1		IN		A	192.168.75.17
+lgs2		IN		A	192.168.75.117
+lgs3		IN		A	192.168.75.28
+lgs4		IN		A	192.168.75.128
+lms1		IN		A	192.168.75.20
+msg1		IN		A	192.168.75.16
+scg1		IN		A	192.168.75.26
+uss1		IN		A	192.168.75.12
+uuweb1		IN		A	192.168.75.30
+ads1		IN		A	192.168.75.30
+mns1		IN		A	192.168.75.30
+vip1		IN		A	192.168.75.23
+pms1		IN		A	192.168.75.32
+pps1		IN		A	192.168.75.32
+bpm1		IN		A	192.168.75.32
+PF2-DB		IN              A	192.168.90.93
+ODS-DB		IN              A	192.168.90.93
+

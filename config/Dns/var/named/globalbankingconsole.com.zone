@@ -1,0 +1,14 @@
+$TTL 86400      ; 1 day
+@               IN SOA  ns1.yxunistar.com. root.globalbankingconsole.com.zone (
+                                3         ; serial
+                                1H       ; refresh (1 hour)
+                                15M        ; retry (15 minutes)
+                                2W    ; expire (2 weeks)
+                                1D      ; minimum (1 day)
+                                )
+@               IN              NS      ns1.yxunistar.com.
+bankadmin      IN     A     172.30.115.111
+bank1admin     IN     A     113.21.219.19
+bank2admin     IN     A     180.214.162.192
+bank3admin     IN     A     192.168.2.230
+

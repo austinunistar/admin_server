@@ -1,0 +1,11 @@
+$TTL 86400	; 1 day
+@		IN SOA	ns1.yxunistar.com. root.dcuat2.com (
+				5         ; serial
+				1H       ; refresh (1 hour)
+				15M        ; retry (15 minutes)
+				2W    ; expire (2 weeks)
+				1D      ; minimum (1 day)
+				)
+@			IN		NS	ns1.yxunistar.com.
+;dcs1			IN		A	192.168.74.33
+DC-DB	IN		A	192.168.90.53

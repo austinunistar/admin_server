@@ -1,0 +1,13 @@
+$TTL    86400
+@               IN SOA          ns1.yxunistar.com.       root.odsdev1.com (
+                                        1              ; serial (d. adams)
+                                        1H              ; refresh
+                                        15M             ; retry
+                                        2W              ; expire
+                                        1D )            ; minimum
+@                  IN      NS      ns1.yxunistar.com.
+
+ODS-DB        	IN    	A	192.168.100.80
+ODS-DB	        IN      A	192.168.100.81
+ODS-DB-N1	IN      A	192.168.100.83
+ODS-DB-N1-VIP	IN      A	192.168.100.85
